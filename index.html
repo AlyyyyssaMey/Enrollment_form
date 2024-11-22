@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+
+    <div class="container">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+
+            <label for="course">Course Options:</label>
+            <select id="course" name="course">
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="BSA">BSA</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="webdev" name="interests" value="Web Development">
+            <label for="webdev">Web Development</label>
+            <input type="checkbox" id="datasci" name="interests" value="Data Science">
+            <label for="datasci">Data Science</label>
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="graphicdesign" name="interests" value="Graphic Design">
+            <label for="graphicdesign">Graphic Design</label>
+            <input type="checkbox" id="Accountant" name="interests" value="Graphic Design">
+            <label for="Accountant">Accountant</label>
+            <input type="checkbox" id="Public Administrator" name="interests" value="Graphic Design">
+            <label for="Public Administrator">Public Administrator</label>
+            <input type="checkbox" id="Social Worker" name="interests" value="Graphic Design">
+            <label for="Social Worker">Social Worker</label>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Olsen Quiambao</td>
+                    <td>olsen.quiambao@example.com</td>
+                    <td>23</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gwen Apuli</td>
+                    <td>gwen.apuli@example.com</td>
+                    <td>22</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stacy Sivallana</td>
+                    <td>stacy.sivallana@example.com</td>
+                    <td>21</td>
+                    <td>Female</td>
+                    <td>BSPA</td>
+                    <td>Data Science</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Summer Luna</td>
+                    <td>summer.luna@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mary Loi Recalde</td>
+                    <td>maloi.recalde@example.com</td>
+                    <td>22</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Social Worker</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Mikka Jimenea</td>
+                    <td>mikka.jimenea@example.com</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    <td>BSA</td>
+                    <td>Accountant</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Maria Nicollete Vergara</td>
+                    <td>colet.vergara@example.com</td>
+                    <td>21</td>
+                    <td>Female</td>
+                    <td>BSPA</td>
+                    <td>Public Administrator</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Maraiah Queen Arceta</td>
+                    <td>aiah.arceta@example.com</td>
+                    <td>23</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Jhoanna Robles</td>
+                    <td>jhoanna.robles@example.com</td>
+                    <td>21</td>
+                    <td>Female</td>
+                    <td>BSA</td>
+                    <td>Accountant</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Sheena Catacutan</td>
+                    <td>sheena.mae@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Social Worker</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
